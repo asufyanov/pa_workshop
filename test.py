@@ -10,8 +10,8 @@ import datetime
 @st.cache_data
 def init_data():
     # Fetch data from URL here, and then clean it up.
-    sales = pd.read_excel(io='budget_sales.xlsx', sheet_name='рПродажиФакт')
-    products = pd.read_excel(io='budget_sales.xlsx', sheet_name='спрТовары')
+    sales = pd.read_excel(io='https://github.com/asufyanov/pa_workshop/blob/054bf7fc8eaee21a25bcad3d9043c5836930977b/budget_sales.xlsx', sheet_name='рПродажиФакт')
+    products = pd.read_excel(io='https://github.com/asufyanov/pa_workshop/blob/054bf7fc8eaee21a25bcad3d9043c5836930977b/budget_sales.xlsx', sheet_name='спрТовары')
     sales_original_names = sales.columns
     sales_english_names = \
     ['check_num', 'date', 'time', 'product', 'amount', 'price', 'total_sum', 
