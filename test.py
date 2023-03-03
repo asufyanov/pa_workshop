@@ -4,8 +4,6 @@ import numpy as np
 import altair as alt
 import datetime
 
-import plotly.express as px
-
 
 
 
